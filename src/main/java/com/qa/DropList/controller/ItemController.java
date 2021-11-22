@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.qa.DropList.domain.Item;
 import com.qa.DropList.service.ItemService;
 
-
-
-
 @RestController
 @RequestMapping("/item")
 public class ItemController {

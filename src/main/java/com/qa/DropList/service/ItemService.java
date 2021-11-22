@@ -32,6 +32,8 @@ public class ItemService {
 
 	        existing.setItemName(item.getItemName());
 	        existing.setItemType(item.getItemType());
+	        existing.setItemBrand(item.getItemBrand());
+	        existing.setReleaseDate(item.getReleaseDate());
 	        
 	        return this.repo.save(existing);
 		}

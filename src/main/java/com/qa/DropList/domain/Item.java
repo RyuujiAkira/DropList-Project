@@ -74,7 +74,7 @@ public class Item {
 		this.itemType = itemType;
 	}
 
-	public String getBrand() {
+	public String getItemBrand() {
 		return itemBrand;
 	}
 

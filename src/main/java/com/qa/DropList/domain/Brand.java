@@ -1,6 +1,5 @@
 package com.qa.DropList.domain;
 
-import java.util.Date;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -22,8 +21,8 @@ public class Brand {
 	@Column(nullable = false)
 	private String brandType;
 
-	@OneToMany
-	private Item item;
+//	@OneToMany
+//	private Item item;
 
 	public Brand() {
 		super();

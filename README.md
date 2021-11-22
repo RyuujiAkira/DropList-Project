@@ -1,4 +1,4 @@
-Coverage: 68.1%
+Coverage: N/A%
 # Drop List = Hobby Project
 
 This project is called Drop List and is a web application built with backend that allows the user to use the website to create items and brands. The user can also update and
@@ -18,6 +18,7 @@ Intended for Windows users. Any other Operating Systems find their respective wa
 * Java JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
 * MySQL - https://dev.mysql.com/downloads/windows/installer/8.0.html
 * Java IDE (Eclipse)
+* Web Browser (Chrome) - https://www.google.com/intl/en_uk/chrome/
 
 
 ### Installing
@@ -27,17 +28,14 @@ A step by step series of examples that tell you how to get a development environ
 1. Install all prerequisite software listed above
 2. Open Git CMD 
 3. Find the folder you want to clone the repository to
-4. Use Git to clone the repository `git clone https://github.com/RyuujiAkira/IMS-Starter.git`
+4. Use Git to clone the repository `git clone https://github.com/RyuujiAkira/DropList-Project.git`
 5. Open the project in your Java IDE (Eclipse in this case)
-6. Open MySQL and create an 'ims' database
-7. Connect to the database
-8. Using MySQL use the SQL files located in the repository to populate the database
-9. Run the program in the IDE
+6. Click run program as Spring Application
 
 
-In the console the user can enter one of the three entities on the system `CUSTOMER`, `ITEM`, `ORDER`
+When the program starts up the user can go to `http://localhost:8080/` on their preferred browser and interact woth the web application
 
-Here the user can `CREATE`, `UPDATE`, `READ`, `DELETE` for all three entities. These actions allow the user to create, update, read and delete the respective customers, items and orders. Futhermore if `ORDER` is selected they have additional options which are `ADDITEM`, `DELETEITEM`, `CALCULATEORDER`. These actions allow the user to add an item to an order, delete an item from an order and also caluclate the total value of the order. 
+Here the user can click on the pages on the application and navigate the website through the nav bar . 
 
 ## Running the tests
 
@@ -73,9 +71,9 @@ To run coding style tests I manually reviewed the code looking for inconsistenci
 
 1. To deploy the program on a live system you must have Jave JDK installed on your machine. 
 2. Open command prompt on your system
-3. Clone the repository with the command `git clone https://github.com/RyuujiAkira/IMS-Starter.git`
+3. Clone the repository with the command `git clone https://github.com/RyuujiAkira/DropList-Project.git`
 4. Locate the folder in command prompt
-5. Run the command ``` java -jar ims-0.0.1-jar-waith-dependencies.jar ```
+5. Run the command ``` java -jar DropList-Project-0.0.1-SNAPSHOT-jar-with-dependencies.jar ```
 6. The program should start running 
 
 ## Built With
@@ -83,6 +81,7 @@ To run coding style tests I manually reviewed the code looking for inconsistenci
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Java](https://www.java.com/en/) - Programming Language
 * [MySQL](https://www.mysql.com/) - Database Service
+* [Spring](https://spring.io/projects/spring-boot) - Backend
 
 ## Versioning
 
@@ -94,8 +93,7 @@ We use [Git](https://git-scm.com/) and [GitHub](https://github.com/) for version
 
 ## Authors
 
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
-* * **Jonathan Rabaja** - *Completion of project* - [jonathanrabaja](https://github.com/ryuujiakira)
+* * **Jonathan Rabaja** - *All work* - [jonathanrabaja](https://github.com/ryuujiakira)
 
 ## License
 
@@ -103,6 +101,5 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* learnsql.com
-* RBarryYoung - https://stackoverflow.com/users/109122/rbarryyoung
-* TBohnen.jnr - https://stackoverflow.com/users/505594/tbohnen-jnr
+* QA Community
+* https://www.w3schools.com/

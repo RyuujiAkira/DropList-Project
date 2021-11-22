@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.qa.DropList.domain.Item;
 import com.qa.DropList.repo.ItemRepo;
 
+@Service
 public class ItemService {
 	
 	private ItemRepo repo;

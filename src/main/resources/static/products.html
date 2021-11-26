@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Drop List</a>
+            <a class="navbar-brand" href="index.html">Drop List</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -138,6 +138,47 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Add Brand</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label for="brandName" class="form-label">Brand name</label>
+                            <input type="text" class="form-control" id="brandName" required>
+                        </div>
+                        <div>
+                            <label for="brandType" class="form-label">Brand type</label>
+                            <select class="form-select" id="brandType" required>
+                                <option selected disabled value="">Click to choose brand type</option>
+                                <option value="1">Streetwear</option>
+                                <option value="2">Designer</option>
+                                <option value="3">Sports</option>
+                            </select>
+                        </div>
+                        <div class="pt-3">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-primary bg-opacity-10">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" id="cardDiv">
 
             </div>
         </div>

@@ -40,7 +40,7 @@ public class ItemService {
     	Item existing = this.repo.findById(id).get();
     	existing.setItemName(item.getItemName());
     	existing.setItemType(item.getItemType());
-    	existing.setItemBrand(item.getItemBrand());
+    	existing.setItemBrandID(item.getItemBrandID());
     	existing.setReleaseDate(item.getReleaseDate());
     	return this.repo.saveAndFlush(existing);
     }

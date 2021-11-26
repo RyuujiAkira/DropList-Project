@@ -1,5 +1,6 @@
 package com.qa.DropList.domain;
 
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -8,6 +9,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Brand {
@@ -21,8 +24,9 @@ public class Brand {
 	@Column(nullable = false)
 	private String brandType;
 
-//	@OneToMany
-//	private Item item;
+	@JsonIgnore
+	@OneToMany(mappedBy="brand")
+	private List <Item> items;
 
 	public Brand() {
 		super();
@@ -63,11 +67,32 @@ public class Brand {
 		this.brandType = brandType;
 	}
 
+	public List<Item> getItems() {
+		return items;
+	}
 
+	public void setAppointments(List<Item> items) {
+		this.items = items;
+	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(brandType, brandID, brandName);
+		return Objects.hash(items, brandType, brandID, brandName);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Brand other = (Brand) obj;
+		return Objects.equals(items, other.items) && Objects.equals(brandName, other.brandName) && brandID == other.brandID 
+				&& Objects.equals(brandType, other.brandType);
 	}
 }
+
+
 

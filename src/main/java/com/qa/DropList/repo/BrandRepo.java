@@ -1,6 +1,6 @@
 package com.qa.DropList.repo;
 
-import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 import com.qa.DropList.domain.Brand;
 
 @Repository
-public interface BrandRepo extends JpaRepository <Brand, Long>{
+public interface BrandRepo extends JpaRepository<Brand, Long>{
+
+	@Query(value = "SELECT * FROM brand WHERE brand_name = ?1", nativeQuery = true)
+	Optional<Brand> findByBrandName(String brand_name);
 	
 }

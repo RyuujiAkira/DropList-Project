@@ -35,7 +35,9 @@ A step by step series of examples that tell you how to get a development environ
 
 When the program starts up the user can go to `http://localhost:8080/` on their preferred browser and interact with the web application
 
-Here the user can click on the pages on the application and navigate the website through the nav bar . 
+Here the user can click on the pages on the application and navigate the website through the nav bar.
+With the main features on the Brands and Products pages the user can create new entities which connect to a database on the back-end.
+The user also has the option to delete and edit these with back-end functionality.
 
 ## Running the tests
 

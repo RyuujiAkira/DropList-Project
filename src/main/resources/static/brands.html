@@ -152,6 +152,8 @@
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <button type="button" id="addCardBtn" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">Add Brand</button>
+            <button type="button" id="viewAllBtn" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">View Brands</button>
         </div>
     </section>
 
@@ -174,13 +176,13 @@
                             <label for="brandType" class="form-label">Brand type</label>
                             <select class="form-select" id="brandType" required>
                                 <option selected disabled value="">Click to choose brand type</option>
-                                <option value="1">Streetwear</option>
-                                <option value="2">Designer</option>
-                                <option value="3">Sports</option>
+                                <option value="Streetwear">Streetwear</option>
+                                <option value="Designer">Designer</option>
+                                <option value="Sports">Sports</option>
                             </select>
                         </div>
                         <div class="pt-3">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button id="submitBtn" class="btn btn-primary" type="button">Submit Brand</button>
                         </div>
                     </form>
                 </div>

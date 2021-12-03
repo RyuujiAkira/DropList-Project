@@ -48,12 +48,6 @@
                 <p class="lead text-muted py-2">Here are all the products!
                 </p>
             </div>
-
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Add Item</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Delete Item</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Edit Item</button>
-            </div>
         </div>
     </section>
 
@@ -143,32 +137,58 @@
         </div>
     </div>
 
+    <section class="py-3 text-center container">
+        <div class="row py-lg-1">
+            <div class="col-lg-4 col-md-8 mx-auto">
+                <h1 class="fw-light pt-5">Products Not Featured</h1>
+                <p class="lead text-muted py-2">Add, delete, edit products here!
+                </p>
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" id="addCardBtn" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Add Product</button>
+            <button type="button" id="viewAllBtn" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">View Products</button>
+        </div>
+    </section>
+
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Add Brand</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Add Product</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div>
-                            <label for="brandName" class="form-label">Brand name</label>
-                            <input type="text" class="form-control" id="brandName" required>
+                            <label for="productName" class="form-label">Product name</label>
+                            <input type="text" class="form-control" id="productName" required>
                         </div>
                         <div>
-                            <label for="brandType" class="form-label">Brand type</label>
-                            <select class="form-select" id="brandType" required>
-                                <option selected disabled value="">Click to choose brand type</option>
-                                <option value="1">Streetwear</option>
-                                <option value="2">Designer</option>
-                                <option value="3">Sports</option>
+                            <label for="productType" class="form-label">Product type</label>
+                            <select class="form-select" id="productType" required>
+                                <option selected disabled value="">Click to choose product type</option>
+                                <option value="T-shirt">T-shirt</option>
+                                <option value="Hoodie">Hoodie</option>
+                                <option value="Long Sleeve">Long Sleeve</option>
+                                <option value="Accessory">Acessory</option>
+                                <option value="Shoe">Shoe</option>
                             </select>
                         </div>
+                        <div>
+                            <label for="productBrandID" class="form-label">Product brand ID</label>
+                            <input type="number" class="form-control" id="productBrandID" required>
+                        </div>
+                        <div>
+                            <label for="releaseDate" class="form-label">Release date</label>
+                            <input type="date" class="form-control" id="releaseDate" required>
+                        </div>
                         <div class="pt-3">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="button">Submit product</button>
                         </div>
                     </form>
                 </div>

@@ -1,10 +1,5 @@
 package com.qa.DropList.controller;
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
 import java.util.List;
 
 import org.springframework.http.HttpStatus;

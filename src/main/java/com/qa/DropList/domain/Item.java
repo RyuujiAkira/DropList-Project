@@ -1,6 +1,5 @@
 package com.qa.DropList.domain;
 
-import java.util.Date;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -26,7 +25,7 @@ public class Item {
 	private Long itemBrandID;
 	
 	@Column(nullable = false)
-	private Date releaseDate;
+	private String releaseDate;
 
 	@ManyToOne
 	private Brand brand;
@@ -35,7 +34,7 @@ public class Item {
 		super();
 	}
 
-	public Item(Long itemID, String itemName, String itemType, Long itemBrandID, Date releaseDate) {
+	public Item(Long itemID, String itemName, String itemType, Long itemBrandID, String releaseDate) {
 		this.itemID = itemID;
 		this.itemName = itemName;
 		this.itemType = itemType;
@@ -43,18 +42,18 @@ public class Item {
 		this.releaseDate = releaseDate;
 	}
 
-	public Item(String itemName, String itemType, Long itemBrandID, Date releaseDate) {
+	public Item(String itemName, String itemType, Long itemBrandID, String releaseDate) {
 		this.itemName = itemName;
 		this.itemType = itemType;
 		this.itemBrandID = itemBrandID;
 		this.releaseDate = releaseDate;
 	}
 
-	public long getItemID() {
+	public Long getItemID() {
 		return itemID;
 	}
 
-	public void setItemID(long itemID) {
+	public void setItemID(Long itemID) {
 		this.itemID = itemID;
 	}
 	
@@ -82,11 +81,11 @@ public class Item {
 		this.itemBrandID = itemBrandID;
 	}
 
-	public Date getReleaseDate() {
+	public String getReleaseDate() {
 		return releaseDate;
 	}
 
-	public void setReleaseDate(Date releaseDate) {
+	public void setReleaseDate(String releaseDate) {
 		this.releaseDate = releaseDate;
 	}
 

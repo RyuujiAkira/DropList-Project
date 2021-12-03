@@ -1,5 +1,10 @@
 package com.qa.DropList.controller;
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -20,7 +25,8 @@ import com.qa.DropList.service.BrandService;
 //400 - Bad Request, 404 - Not Found, 500 - Internal Server Error
 
 @RestController
-@RequestMapping("/brand") // http://localhost:8080/user/...
+@RequestMapping("/brand") // http://localhost:8080/brand/...
+
 public class BrandController {
 
 	private BrandService service;

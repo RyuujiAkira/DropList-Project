@@ -18,10 +18,10 @@ public class Brand {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long brandID;
 	
-	@Column(nullable = false)
+	@Column(name = "brandName", nullable = false)
 	private String brandName;
 	
-	@Column(nullable = false)
+	@Column(name = "brandType", nullable = false)
 	private String brandType;
 
 	@JsonIgnore
@@ -43,7 +43,7 @@ public class Brand {
 		this.brandType = brandType;
 	}
 
-	public long getBrandID() {
+	public Long getBrandID() {
 		return brandID;
 	}
 
